@@ -2366,6 +2366,14 @@ section .item:last-child .item_cont {
         font-size: 12px;
     }
 
+    .certi .certi_g li .hover {
+        border-radius: 5px;
+    }
+
+    .certi .certi_g li .hover::before {
+        border-radius: 5px;
+    }
+
     .intro_ui.partners .item+.item {
         padding-top: 40px;
         border-bottom: 0;

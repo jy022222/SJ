@@ -419,7 +419,10 @@
         padding-left: 10px;
     }
 
+    /* 240606 수정 */
     .btn_top {
+        bottom: 100px;
+        right: 35px;
         width: 35px;
         height: 35px;
     }

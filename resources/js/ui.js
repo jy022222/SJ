@@ -23,27 +23,11 @@ $(document).ready(function () {
         $(this).parent('.select_box').toggleClass('open')
     })
 
+    //lnb
     var windowWidth = $(window).width();
     if (windowWidth < 900) {
         $('.dBody .tab_nav .current').prependTo('.tab_nav ul');
     }
-
-    //lnb
-    // $(window).resize(function () {
-    //     document.location.reload();
-    // })
-
-    //모바일 스크롤 픽스
-    // var headerHeight = $('.dBody section').offset().top;
-
-    // $(window).scroll(function () {
-    //     var window = $(this).scrollTop();
-    //     if (headerHeight <= window) {
-    //         $('.tab_nav').addClass('fix');
-    //     } else {
-    //         $('.tab_nav').removeClass('fix');
-    //     }
-    // })
 
     //탑버튼
     $(window).scroll(function () {
