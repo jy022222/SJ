@@ -1,0 +1,496 @@
+.header_layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+}
+
+.header_layout .inner {
+    height: 100%;
+}
+
+.header_layout .logo {
+    position: absolute;
+    top: 17px;
+    left: 110px;
+}
+
+.header_layout nav {
+    height: 100%;
+}
+
+.header_layout nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+.header_layout nav li a {
+    display: block;
+    transition: 0.3s;
+}
+
+.header_layout nav li:hover a {
+    color: #2566d8;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn_allMenu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    background: #2566D8;
+}
+
+.btn_allMenu span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+}
+
+.btn_allMenu span+span {
+    margin-top: 5px;
+}
+
+.all_menu {
+    position: fixed;
+    top: 0;
+    right: -200%;
+    width: 600px;
+    height: 100%;
+    background: url(../images/bg_allMenu.png) 0 0 / cover;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.all_menu.show {
+    right: 0;
+    transition: 0.5s;
+}
+
+.all_menu .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 0 37px;
+}
+
+.all_menu .logo {
+    position: static;
+    margin-top: 30px;
+}
+
+.all_menu .btn_close {
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-top: 25px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+.all_menu .btn_close:hover {
+    background: #2566D8;
+    border: 1px solid #2566D8;
+    transition: 0.3s;
+}
+
+.all_menu .cont {
+    margin-top: 155px;
+    margin-left: 80px;
+}
+
+.all_menu .depth1 {
+    position: relative;
+}
+
+.all_menu .depth1>a {
+    display: block;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.all_menu .depth1:hover>a {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
+
+.all_menu .depth1+.depth1 {
+    margin-top: 60px;
+}
+
+.all_menu .depth2 {
+    margin-top: 17px;
+    display: none;
+}
+
+.all_menu .depth2 li+li {
+    margin-top: 14px;
+}
+
+.all_menu .depth2 a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.all_menu .depth2 a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    background: #fff;
+    display: none;
+    transition: 0.3s;
+}
+
+.all_menu .depth2 li:hover a {
+    padding-left: 15px;
+    opacity: 1;
+}
+
+.all_menu .depth2 li:hover a::before {
+    display: block;
+}
+
+.footer_layout {
+    width: 100%;
+    background: #13233E;
+    color: #707070;
+}
+
+.footer_layout .inner {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.footer_layout .cola {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #707070;
+}
+
+.footer_layout .cola p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer_layout .cola span {
+    font-weight: 400;
+}
+
+.footer_layout .colb {
+    padding-top: 20px;
+}
+
+.footer_layout .colb li {
+    display: flex;
+    gap: 34px;
+}
+
+.footer_layout .colb li+li {
+    margin-top: 9px;
+}
+
+.footer_layout .colb li p {
+    font-size: 14px;
+}
+
+.footer_layout .colb li p:first-child {
+    width: 48px;
+    font-weight: 600;
+}
+
+.footer_layout .copyright {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer_layout .logo {
+    position: absolute;
+    right: 0;
+    bottom: 82px;
+}
+
+.footer_layout .site_g {
+    position: absolute;
+    bottom: 39px;
+    right: 0;
+}
+
+.footer_layout .site_g .select_box {
+    position: relative;
+    width: 160px;
+    height: 30px;
+}
+
+.footer_layout .site_g .select_box .tit a {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.footer_layout .site_g .select_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+    width: 8px;
+    height: 4px;
+    background: url(../images/ic_footer.png) 0 0 / cover;
+}
+
+.footer_layout .site_g .select_box .option {
+    position: absolute;
+    bottom: 29px;
+    left: 0;
+    width: 160px;
+    max-height: 250px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #13233E;
+    display: none;
+}
+
+.footer_layout .site_g .select_box.open .option {
+    display: block
+}
+
+.footer_layout .site_g .select_box.open i {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.footer_layout .site_g .select_box .option li+li {
+    margin-top: 5px;
+}
+
+.footer_layout .site_g .select_box .option a {
+    font-size: 14px;
+}
+
+.btn_top {
+    position: fixed;
+    right: 70px;
+    bottom: 200px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.btn_top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn_top img {
+    vertical-align: baseline;
+    transition: 0.3s;
+}
+
+.btn_top:hover img {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+@media (max-width: 1280px) {
+    .header_layout nav {
+        display: none;
+    }
+
+    .footer_layout .inner {
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 900px) {
+    .header_layout {
+        height: 50px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header_layout .logo {
+        top: 8px;
+        left: 20px;
+        width: 50px;
+    }
+
+    .header_layout .logo img {
+        width: 100%;
+    }
+
+    .btn_allMenu {
+        top: 12px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+        border-radius: 3.5px;
+    }
+
+    .btn_allMenu span {
+        width: 10px;
+        height: 1px;
+    }
+
+    .btn_allMenu span+span {
+        margin-top: 2.5px;
+    }
+
+    .all_menu {
+        width: 300px;
+    }
+
+    .all_menu .head {
+        padding: 0 12px 0 18px;
+    }
+
+    .all_menu .logo {
+        margin-top: 15px;
+    }
+
+    .all_menu .btn_close {
+        width: 25px;
+        height: 25px;
+        margin-top: 12px;
+        border-radius: 3.5px;
+    }
+
+    .all_menu .btn_close img {
+        width: 50%;
+        vertical-align: baseline;
+    }
+
+    .all_menu .depth1>a {
+        font-size: 18px;
+    }
+
+    .all_menu .depth1+.depth1 {
+        margin-top: 30px;
+    }
+
+    .all_menu .depth2 li+li {
+        margin-top: 10px;
+    }
+
+    .all_menu .depth2 a {
+        font-size: 12px;
+    }
+
+    .all_menu .depth2 a::before {
+        width: 3px;
+        height: 3px;
+    }
+
+    .all_menu .depth2 li:hover a {
+        padding-left: 10px;
+    }
+
+    .btn_top {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn_top img {
+        width: 50%;
+    }
+
+    .footer_layout .inner {
+        padding: 25px 0;
+    }
+
+    .footer_layout .cola {
+        padding-bottom: 10px;
+    }
+
+    .footer_layout .cola p {
+        font-size: 12px;
+    }
+
+    .footer_layout .colb {
+        padding-top: 10px;
+    }
+
+    .footer_layout .colb li {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer_layout .colb li p:first-child {
+        width: 41px;
+    }
+
+    .footer_layout .colb li p {
+        font-size: 12px;
+    }
+
+    .footer_layout .copyright {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .footer_layout .site_g {
+        position: static;
+        margin-top: 12px;
+    }
+
+    .footer_layout .site_g .select_box {
+        width: 100%;
+    }
+
+    .footer_layout .site_g .select_box .tit a {
+        padding: 0 7.5px;
+        font-size: 12px;
+    }
+
+    .footer_layout .site_g .select_box .option {
+        width: 100%;
+        padding: 7.5px;
+    }
+
+    .footer_layout .site_g .select_box .option a {
+        font-size: 12px;
+    }
+
+    .footer_layout .logo {
+        bottom: 71px;
+        width: 80px;
+    }
+
+    .footer_layout .logo img {
+        width: 100%;
+    }
+}

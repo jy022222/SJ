@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 810px;
+    margin-top: 100px;
+}
+
+.intro .txt_g {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.intro .txt_g .txt1 {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 19px;
+}
+
+.intro .txt_g .txt1 strong {
+    font-weight: 600;
+}
+
+.intro .txt_g .txt2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.mainSlider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainSlider .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.mainSlider .item1 {
+    background: url(../images/main/thum1.png) 0 0 / cover;
+}
+
+.mainSlider .item2 {
+    background: url(../images/main/thum2.png) 0 0 / cover;
+}
+
+.mainSlider .item3 {
+    background: url(../images/main/thum3.png) 0 0 / cover;
+}
+
+.mainSlider .swiper-pagination {
+    bottom: 100px;
+}
+
+.mainSlider .swiper-pagination-bullet {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 0;
+    overflow: hidden;
+    opacity: 1;
+    margin: 0 2.5px;
+}
+
+.mainSlider .swiper-pagination-bullet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mainSlider .swiper-pagination-bullet-active:before {
+    background: #fff;
+    animation: slide-progress 3s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+}
+
+.mainSlider .swiper-paused .swiper-pagination-bullet-active:before {
+    animation-play-state: paused;
+}
+
+@keyframes slide-progress {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.mainSlider .btn_prev,
+.mainSlider .btn_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.mainSlider .btn_prev {
+    left: 300px;
+    background: url(../images/main/btn_prev.png) 0 0 / cover;
+}
+
+.mainSlider .btn_next {
+    right: 300px;
+    background: url(../images/main/btn_next.png) 0 0 / cover;
+}
+
+@media (max-width: 900px) {
+    .intro {
+        margin-top: 50px;
+    }
+
+    .intro .txt_g .txt1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+
+    .intro .txt_g .txt2 {
+        font-size: 26åpx;
+    }
+
+    .mainSlider .item1 {
+        background: url(../images/main/thum1.png) center / cover;
+    }
+
+    .mainSlider .item2 {
+        background: url(../images/main/thum2.png) center / cover;
+    }
+
+    .mainSlider .item3 {
+        background: url(../images/main/thum3.png) center / cover;
+    }
+
+    .mainSlider .btn_prev {
+        left: 20px;
+    }
+
+    .mainSlider .btn_next {
+        right: 20px;
+    }
+}

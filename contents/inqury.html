@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수진기업</title>
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/swiper.css">
+    <link rel="stylesheet" href="../resources/css/layout.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+</head>
+
+<body>
+    <header class="header_layout">
+        <div class="inner">
+            <h1 class="logo">
+                <img src="../resources/images/logo.png" alt="수진기업">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Dr.세탁 – RFID기반 스마트세탁 서비스</a></li>
+                    <li><a href="#">클라우드 SaaS 서비스</a></li>
+                    <li><a href="#">린넨 렌탈 서비스</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="btn_allMenu" onclick="$('.all_menu').addClass('show')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="all_menu">
+                <div class="head">
+                    <h1 class="logo">
+                        <img src="../resources/images/logo_w.png" alt="수진기업">
+                    </h1>
+                    <button type="button" class="btn_close" onclick="$('.all_menu').removeClass('show')">
+                        <img src="../resources/images/btn_allMenu_close.png" alt="닫기">
+                    </button>
+                </div>
+                <div class="cont">
+                    <ul>
+                        <li class="depth1">
+                            <a href="#">서비스</a>
+                            <ul class="depth2">
+                                <li><a href="#">Dr.세탁 - RFID기반 스마트세탁 서비스</a></li>
+                                <li><a href="#">클라우드 SaaS 서비스</a></li>
+                                <li><a href="#">린넨 렌탈 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">인프라</a>
+                            <ul class="depth2">
+                                <li><a href="#">Dr.세탁 솔루션</a></li>
+                                <li><a href="#">린넨 제작</a></li>
+                                <li><a href="#">시설/설비 현황</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">회사소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">CEO 인사말</a></li>
+                                <li><a href="#">비전</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">인증</a></li>
+                                <li><a href="#">주요고객</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">고객지원</a>
+                            <ul class="depth2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="dBody">
+        <div class="h2tit h2tit4">
+            <h2>고객지원</h2>
+            <div class="txt_g">
+                <p class="txt1">INQURY</p>
+                <p class="txt2">문의하기</p>
+                <p class="txt3">하루를 새롭게 하는 수진기업</p>
+            </div>
+        </div>
+        <nav class="tab_nav">
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li class="current"><a href="#">문의하기</a></li>
+            </ul>
+            <div class="btn_more"></div>
+        </nav>
+        <section class="customer_ui inqury">
+            <div class="inner">
+                <div class="item_g">
+                    <div class="item">
+                        <p class="item_tit">견적문의</p>
+                        <div class="item_cont">
+                            <div class="board_write">
+                                <table>
+                                    <tr class="name_box">
+                                        <th>상호명/담당자 <span>*</span></th>
+                                        <td>
+                                            <input type="text">
+                                        </td>
+                                    </tr>
+                                    <tr class="tel_box">
+                                        <th>연락처 <span>*</span></th>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="010">010</option>
+                                            </select>
+                                            -
+                                            <input type="text">
+                                            -
+                                            <input type="text">
+                                        </td>
+                                    </tr>
+                                    <tr class="email_box">
+                                        <th>이메일 <span>*</span></th>
+                                        <td class="email">
+                                            <input type="text">
+                                            @
+                                            <input type="text" class="pc">
+                                            <select name="" id="">
+                                                <option value="직접입력">직접입력</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="addr_box">
+                                        <th>주소</th>
+                                        <td>
+                                            <input type="text">
+                                        </td>
+                                    </tr>
+                                    <tr class="memo_box">
+                                        <th>내용</th>
+                                        <td>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="item_tit">개인정보 수집 및 이용동의</p>
+                        <div class="item_cont">
+                            <div class="agreement">
+                                <div class="agr_txt">
+                                    <p>
+                                        회사는 '견적문의'를 이용하는 기업 및 개인을 대상으로 아래와 같이 개인정보를 수집하고 있습니다. <br>
+                                        1. 수집 개인정보 항목: 이름, 연락처, 이메일 등 <br>
+                                        2. 개인정보의 수집 및 이용목적: 문의내용에 대한 확인 및 신속하고 정확한 상담(오류해결 등), 고객불만 발생시 해결 <br>
+                                        3. 개인정보의 이용기간: 수집된 정보는 서비스 이용기간 동안 보관하며, 이 외의 다른 목적으로 사용되지 않습니다. <br>
+                                        4. 그 밖의 사항은 개인정보취급방침을 준수합니다.
+                                    </p>
+                                </div>
+                                <p class="chk_box">
+                                    <input type="checkbox" id="fCk1">
+                                    <label for="fCk1">개인정보 수집 및 이용에 동의합니다.</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <button class="btn_top">
+        <img src="../resources/images/ic_btnTop.png" alt="맨위로">
+    </button>
+    <footer class="footer_layout">
+        <div class="inner">
+            <div class="cola">
+                <p>(주)수진기업 ㅣ 대표자 <span>지은영</span> ㅣ 사업자등록번호 <span> 438-87-01530</span></p>
+            </div>
+            <div class="colb">
+                <ul>
+                    <li class="addr">
+                        <p>주소</p>
+                        <p>
+                            <span>경기도 화성시 양감면 사격장길 88-28</span>
+                            Sagyeokjanggil 88-28, Yanggammyeon, Hwaseong-Si, Kyeonggi-Do, Korea
+                        </p>
+                    </li>
+                    <li class="tel">
+                        <p>전화</p>
+                        <p>031 366 2047-8</p>
+                    </li>
+                    <li>
+                        <p>팩스</p>
+                        <p>031 366 2049</p>
+                    </li>
+                    <li>
+                        <p>이메일</p>
+                        <p>spnman@hanmail.net</p>
+                    </li>
+                    <li>
+                        <p>운영시간</p>
+                        <p>09:00 ~ 18:00</p>
+                    </li>
+                </ul>
+            </div>
+            <small class="copyright">ⓒ 2024 (주)수진기업. ALL RIGHTS RESERVED.</small>
+            <div class="logo">
+                <img src="../resources/images/logo_g.png" alt="수진기업">
+            </div>
+            <div class="site_g">
+                <div class="select_box">
+                    <p class="tit"><a href="#">패밀리 사이트<i></i></a></p>
+                    <ul class="option">
+                        <li><a href="#">사이트1</a></li>
+                        <li><a href="#">사이트2</a></li>
+                        <li><a href="#">사이트3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../resources/js/jquery.min.js"></script>
+    <script src="../resources/js/swiper.js"></script>
+    <script src="../resources/js/ui.js"></script>
+</body>
+
+</html>
